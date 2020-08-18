@@ -1,7 +1,7 @@
-package com.jamin.mytomcat.service;
+package com.jamin.mytomcat.baseServlet;
 
-import com.jamin.mytomcat.entity.MyRequest;
-import com.jamin.mytomcat.entity.MyResponse;
+import com.jamin.mytomcat.core.MyRequest;
+import com.jamin.mytomcat.core.MyResponse;
 
 /**
  * @author jamin

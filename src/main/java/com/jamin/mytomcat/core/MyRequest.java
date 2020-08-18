@@ -1,4 +1,4 @@
-package com.jamin.mytomcat.entity;
+package com.jamin.mytomcat.core;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
@@ -12,7 +12,7 @@ import java.io.InputStream;
  * 封装请求类
  */
 public class MyRequest {
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    public Logger logger = LoggerFactory.getLogger(this.getClass());
     /**
      * url地址
      */
@@ -38,6 +38,7 @@ public class MyRequest {
         String httpHead = httpRequest.split("\r\n")[0];
         url = httpHead.split("\\s")[1];
         method = httpHead.substring(0, 3);
+        System.out.println("接收到" + method + "请求--------路径为" + url);
     }
 
     public String getUrl() {

@@ -1,7 +1,8 @@
-package com.jamin.mytomcat.service;
+package com.jamin.mytomcat.servlet;
 
-import com.jamin.mytomcat.entity.MyRequest;
-import com.jamin.mytomcat.entity.MyResponse;
+import com.jamin.mytomcat.baseServlet.AbstractMyServlet;
+import com.jamin.mytomcat.core.MyRequest;
+import com.jamin.mytomcat.core.MyResponse;
 
 import java.io.IOException;
 

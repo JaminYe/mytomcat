@@ -1,4 +1,4 @@
-package com.jamin.mytomcat.entity;
+package com.jamin.mytomcat.core;
 
 /**
  * @author jamin
@@ -50,5 +50,14 @@ public class ServletMapping {
         this.servletName = servletName;
         this.url = url;
         this.clazz = clazz;
+    }
+
+    @Override
+    public String toString() {
+        return "ServletMapping{" +
+                "servletName='" + servletName + '\'' +
+                ", url='" + url + '\'' +
+                ", clazz='" + clazz + '\'' +
+                '}';
     }
 }
