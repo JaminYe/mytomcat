@@ -79,17 +79,11 @@ public class MyTomcat {
      */
     public void initServletMapping() {
 
-        /**
-         * 在手动配置servletMapping到list
-         */
+        // 在手动配置servletMapping到list
        /* for (ServletMapping servletMapping : ServletMappingConfig.servletMappingList) {
             hashMap.put(servletMapping.getUrl(), servletMapping.getClazz());
         }*/
-
-
-        /**
-         * 使用解析xml的方式
-         */
+        //使用解析xml的方式
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
         SAXParser saxParser = null;
         try {

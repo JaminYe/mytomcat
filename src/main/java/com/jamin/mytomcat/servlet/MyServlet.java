@@ -17,7 +17,8 @@ public class MyServlet extends AbstractMyServlet {
     @Override
     public void doGet(MyRequest myRequest, MyResponse myResponse) {
         try {
-            myResponse.write("测试get请求");
+            // myResponse.write("测试get请求");
+            myResponse.sendRedirect("html/te1st.html");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,9 +27,10 @@ public class MyServlet extends AbstractMyServlet {
     @Override
     public void doPost(MyRequest myRequest, MyResponse myResponse) {
         try {
-            myResponse.write("测试get请求");
+            myResponse.write("测试post请求");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 }
